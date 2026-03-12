@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content = "width=device-width, initial-scale-scale=1.0">
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
     <title>Gestión de herramientas - Préstamo</title>
     <link rel="stylesheet" href="css/style.css">
 
@@ -30,10 +30,42 @@
 <h2> Página principal</h2>
 <p>Sección de herramientas que están en uso</p>
 
+
+
 <article>
-    <h2>Estado actual</h2>
-    <p>Luego se mostrará con Java</p>
+<h3> Registro de nuevo préstamo</h3>
+<form action="#" method="POST">
+<label for="operario">Nombre del operario:</label>
+<input type="text" id="operario" name="operario" required>
+
+<label for="id_herramienta">Id de la herramienta:</label>
+<input type="text" id="id_herramienta" name="id_herramienta" required>
+
+<label for="fecha">Fecha de préstamo:</label>
+<input type="date" id="fecha" name="fecha" required>
+
+<label for="turno">Turno de trabajo:</label>
+<select id="turno" name="turno">
+
+    <option value="mañana">Mañana</option>
+    <option value="tarde">Tarde</option>
+    <option value="noche">Noche</option>
+</select>
+
+<label for="firma">Pin de autorización:</label>
+<input type="password" id="firma" name="firma" required>
+
+<label>
+    <input type="checkbox" id="normas" name="normas" required>
+    Acepto la responsabilidad de la herramienta
+</label>
+
+<button type="submit">Resgitrar el préstamo</button>
+
+</form>
 </article>
+
+
 
 </section>
 <aside>
