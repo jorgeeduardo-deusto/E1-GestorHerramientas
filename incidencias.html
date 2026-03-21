@@ -16,7 +16,7 @@
 
 <nav>
     <ul>
-        <li> <a href="index.html">Iniciio</a></li>
+        <li> <a href="index.html">Inicio</a></li>
         <li> <a href="inventario.html">Inventario</a></li>
         <li> <a href="prestamo.html">Préstamos</a></li>
         <li> <a href="incidencias.html">Incidencias</a></li>
@@ -28,13 +28,24 @@
     <main>
 <section>
 <h2> Página principal</h2>
-<img src="alerta.png" alt="imagen de la sección de alerta"
+<img src="images/alerta.png" alt="imagen de la sección de alerta" class="imagen-fluida-alerta">
 <p>Aquí se muestran las incidencias</p>
-
-<article>
-    <h2>Estado actual</h2>
-    <p>Luego se mostrará con Javascript</p>
-</article>
+<article style="background-color: #ffcccc; padding: 15px; border-radius: 8px; border-left: 5px solid red; margin-top: 20px;">
+        <h3 style="color: darkred;">Reporte de Avería Actual</h3>
+        <p>Se ha detectado la siguiente herramienta fuera de servicio:</p>
+        
+        <ul style="margin-left: 20px; margin-top: 10px;">
+            <li><strong>ID Herramienta:</strong> 103</li>
+            <li><strong>Nombre:</strong> Sierra circular</li>
+            <li><strong>Estado:</strong> Averiada (Motor quemado)</li>
+            <li><strong>Prioridad de reparación:</strong> Alta</li>
+        </ul>
+        
+        <p style="margin-top: 15px; font-weight: bold;">
+            Acción requerida: Enviar al taller de reparaciones.
+        </p>
+    </article>
+</section>
 
 </section>
 <aside>

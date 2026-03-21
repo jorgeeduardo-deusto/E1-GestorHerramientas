@@ -17,8 +17,8 @@ function EstadoPlanta(){
 
 
 if(averiadas > 0){
-    console.log("Aviso: Hay" + averiadas + " herramientas que no se pueden usar");
-    alert("Alerta: Hay " + averiadas + "herramientas averiadas");
+    console.log("Aviso: Hay " + averiadas + " herramientas que no se pueden usar");
+    alert("Alerta: Hay " + averiadas + " herramientas averiadas");
 } else{
     console.log("Todas las herramientas están disponibles");
 }}
@@ -26,11 +26,11 @@ if(averiadas > 0){
 
 
 function herramientasImportancia(){
-    console.log("--- Herramientas que tienen prioridad");
+    console.log("--- Herramientas que tienen prioridad---");
     let j = 0;
     while(j< herramientas.length){
         if(herramientas[j].importancia == "alta"){
-console.log("Esta herramienta necesita reparación: " + herramientas[i].nombre);
+console.log("Esta herramienta necesita reparación: " + herramientas[j].nombre);
         }
         j++;
     }
@@ -53,5 +53,10 @@ function prestamo(){
 }
 
 console.log("Sistema de gestión de herramientas");
+let rutaActual = window.location.pathname;
+
+if(rutaActual.includes("incidencias.html")){
 EstadoPlanta();
+}
+
 herramientasImportancia();
