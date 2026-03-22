@@ -14,15 +14,14 @@ function EstadoPlanta(){
         }
     }
 
+let paginasIncidencias = document.getElementById("titulo-incidencias");
 
-
-if(averiadas > 0){
-    console.log("Aviso: Hay " + averiadas + " herramientas que no se pueden usar");
-    alert("Alerta: Hay " + averiadas + " herramientas averiadas");
-} else{
-    console.log("Todas las herramientas están disponibles");
-}}
-
+if (paginasIncidencias != null){
+    if(averiadas>0){
+        alert("Alerta: Hay " + averiadas + " herramientas averiadas");
+    }
+}
+}
 
 
 function herramientasImportancia(){
@@ -53,10 +52,5 @@ function prestamo(){
 }
 
 console.log("Sistema de gestión de herramientas");
-let rutaActual = window.location.pathname;
-
-if(rutaActual.includes("incidencias.html")){
 EstadoPlanta();
-}
-
 herramientasImportancia();
